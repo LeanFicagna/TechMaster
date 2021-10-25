@@ -18,8 +18,8 @@
 </head>
 <body>
 
-  <header style="background-color: rgba(255, 255, 255, 0.7);">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+  <header>
+    <nav id="bar" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="img/logo.png" width="100"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,11 @@
   </footer>
 
   <script type="text/javascript">
-    setInterval(function(){ modifyText() }, 200);
+    setInterval(function(){ modifyText() }, 200)
+    window.addEventListener('scroll', function () {
+      let header = document.getElementById('bar')
+      header.classList.toggle('bg-light', window.scrollY > 100)
+    })
   </script>
 
   <!-- Optional JavaScript; choose one of the two! -->
