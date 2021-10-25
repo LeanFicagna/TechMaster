@@ -1,0 +1,17 @@
+.nav-link:hover {
+      background-color: rgba(50,185,201,0.4);
+      border-radius: 5px;
+      color: white !important;
+      padding-left: 5px;
+}
+
+#img-top {
+      background-image: url('../img/background.jpg');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #009EFF;
+      padding-top: 240px;
+      padding-bottom: 240px;
+}
